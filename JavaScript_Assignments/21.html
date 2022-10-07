@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 21</title>
+  </head>
+  <body>
+    <h1>Task 21</h1>
+    <p id="printArea"></p>
+    <script>
+      let places = [
+        { city: "Murree", country: "Pakistan" },
+        { city: "Jeddah", country: "Saudi Arabia" },
+        { city: "New York", country: "USA" },
+        { city: "Karachi", country: "Pakistan" },
+        { city: "Islamabad", country: "Pakistan" },
+      ];
+      let result = "";
+
+      for (let a = 0; a < places.length; a++) {
+        let message = `${places[a].city} is located in ${places[a].country}`;
+        result += message + "<br>";
+        console.log(message);
+      }
+
+      document.getElementById("printArea").innerHTML = result;
+    </script>
+  </body>
+</html>

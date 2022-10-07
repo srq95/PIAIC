@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 23</title>
+  </head>
+  <body>
+    <h1>Task 23</h1>
+    <p id="printArea"></p>
+    <script>
+      let car = ["Honda", "Suzuki", "Audi", "Honda", "Suzuki", "Audi", "Honda", "Suzuki", "Audi", "Honda", "Honda", "Honda"];
+      let result = "";
+
+      for (let a = 0; a < car.length; a++) {
+        let message = `Is car == 'Honda'? I predict True.`;
+        result += message + "<br>";
+        result += ((car[a] == "Honda") + "<hr>");
+        console.log(message);
+        console.log(car == "Honda");
+      }
+
+      document.getElementById("printArea").innerHTML = result;
+    </script>
+  </body>
+</html>
